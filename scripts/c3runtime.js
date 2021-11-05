@@ -4887,6 +4887,7 @@ self.C3_JsPropNameTable = [
 	{S4_End: 0},
 	{S4_City: 0},
 	{DebtToPay: 0},
+	{FinishedScene: 0},
 	{Camera: 0},
 	{Cellphone: 0},
 	{Headphones: 0},
@@ -5742,6 +5743,7 @@ self.C3_ExpressionFuncs = [
 		},
 		() => "Exit Pop",
 		() => "Return to Map?",
+		() => "End Game?",
 		() => "Functions",
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
