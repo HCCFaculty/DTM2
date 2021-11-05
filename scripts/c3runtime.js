@@ -4627,7 +4627,6 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Arr.Cnds.CompareX,
 		C3.Plugins.Text.Acts.SetFontColor,
 		C3.Plugins.System.Exps.rgbex255,
-		C3.Plugins.System.Exps.rgba,
 		C3.Plugins.Sprite.Cnds.CompareHeight,
 		C3.Plugins.Text.Acts.SetPos,
 		C3.Plugins.Sprite.Acts.MoveToLayer,
@@ -5657,14 +5656,13 @@ self.C3_ExpressionFuncs = [
 		() => 170,
 		() => "As the economy continues to grow, people spend more money on a luxury lifestyle. More people choose to live in cities to work higher paying skilled jobs and automation decreases the need for manual labor.",
 		() => 187,
-		() => 250,
+		() => 267,
 		() => "Life expectancy increases due to access to better healthcare and medicine so the population gradually ages.",
 		() => 290,
-		() => 255,
-		() => 315,
+		() => 260,
 		() => "As more women choose to have fewer children at later ages due to lifestyle changes and career ambitions, the population continues to decrease...",
 		() => 610,
-		() => 320,
+		() => 330,
 		p => {
 			const n0 = p._GetNode(0);
 			return () => n0.ExpObject(0, 0);
@@ -5952,12 +5950,9 @@ self.C3_ExpressionFuncs = [
 		},
 		() => 1600,
 		() => 150,
+		() => 250,
 		() => 850,
 		() => 1050,
-		p => {
-			const f0 = p._GetNode(0).GetBoundMethod();
-			return () => f0(0, 150, 0, 100);
-		},
 		p => {
 			const v0 = p._GetNode(0).GetVar();
 			const v1 = p._GetNode(1).GetVar();
@@ -5989,6 +5984,7 @@ self.C3_ExpressionFuncs = [
 		() => "Hey! Congratulations on the new job.\nI'm Mark Salesman...",
 		() => "You can make a lot of money in our global village...",
 		() => "Come on, let's go to New York and I'll show you how...",
+		() => 255,
 		() => 730,
 		() => 460,
 		() => 190,
@@ -6042,13 +6038,12 @@ self.C3_ExpressionFuncs = [
 		() => "0\n0\n0\n0\n0\n0\n0\n0",
 		() => 230,
 		() => "When you're finished making transactions, tap EXIT to leave the city.",
-		() => 700,
-		() => 105,
+		() => 710,
+		() => 135,
 		() => "Tap GO to return to the map...",
 		() => 950,
 		() => 185,
 		() => 425,
-		() => 330,
 		() => "You can keep the $5000 for now, but every day I'll charge 10% on the balance.",
 		() => "Tap PAY DEBT to pay back the loan -- but make some money first or you'll go broke!",
 		() => 155,
